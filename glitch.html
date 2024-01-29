@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .parent{
+            height: 300px;
+            width: 80vw;
+            background-color: green;
+            border-top: 1px solid transparent;
+            /* isko lagane se ye resolve ho jega. nhi kagenge to parent ko bhi child ke sth margin top mil jti h css confuse ho jti h */
+            /* parent me kuch bhi ak property add kr do che  p h1 then  css confuse nhi hogi. */
+            
+        }
+        .child{
+            height: 100px;
+            width: 100vw;
+            background-color: yellow;
+            margin-top: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+     
+        <div class="child"></div>
+    </div>
+</body>
+</html>
